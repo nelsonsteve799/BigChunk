@@ -57,7 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BC_PLATFORM_WINDOWS;BC_BUILD_EXE;_DEBUG;_CONSOLE;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)BigChunk\src;$(SolutionDir)BigChunk\src\BigChunk;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)BigChunk\src;$(SolutionDir)BigChunk\vendor\spdlog\include;</AdditionalIncludeDirectories>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
     </ClCompile>

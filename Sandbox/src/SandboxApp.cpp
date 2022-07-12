@@ -6,8 +6,7 @@ public:
 	~Sandbox() {}
 };
 
-int main() {
-	Sandbox* sandbox = new Sandbox();
-	sandbox->Run();
-	delete sandbox; 
+BigChunk::Application* CreateApplication() {
+
+	return new Sandbox();
 }

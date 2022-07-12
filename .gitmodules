@@ -1,0 +1,3 @@
+[submodule "BigChunk/vendor/spdlog"]
+	path = BigChunk/vendor/spdlog
+	url = https://github.com/gabime/spdlog

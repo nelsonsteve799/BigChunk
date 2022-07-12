@@ -11,11 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\BigChunk\EntryPoint.h" />
+    <ClInclude Include="src\BigChunk\Log.h" />
     <ClInclude Include="src\BigChunk.h" />
     <ClInclude Include="src\BigChunk\Application.h" />
     <ClInclude Include="src\BigChunk\Core.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BigChunk\Log.cpp" />
     <ClCompile Include="src\BigChunk\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -65,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BC_PLATFORM_WINDOWS;BC_BUILD_DLL;_WINDLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)BigChunk\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
