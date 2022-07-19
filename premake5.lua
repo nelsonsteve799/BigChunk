@@ -18,6 +18,9 @@ project "BigChunk"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "BigChunkpch.h"
+	pchsource "BigChunk/src/BigChunkpch.cpp"
+
 	files{
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp",
