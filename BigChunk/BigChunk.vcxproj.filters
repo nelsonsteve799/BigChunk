@@ -4,6 +4,9 @@
     <Filter Include="BigChunk">
       <UniqueIdentifier>{70E189EC-5CAE-E4F7-85C7-D29F71F31986}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BigChunk\Events">
+      <UniqueIdentifier>{548FC55C-C01A-3321-C92B-B61535368F21}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BigChunk.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\BigChunk\EntryPoint.h">
       <Filter>BigChunk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BigChunk\Events\ApplicationEvent.h">
+      <Filter>BigChunk\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BigChunk\Events\Event.h">
+      <Filter>BigChunk\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BigChunk\Events\KeyEvent.h">
+      <Filter>BigChunk\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BigChunk\Events\MouseEvent.h">
+      <Filter>BigChunk\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\BigChunk\Log.h">
       <Filter>BigChunk</Filter>
