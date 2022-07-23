@@ -89,6 +89,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Debug-windows-x86_64\BigChunk\BigChunk.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -114,6 +115,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Release-windows-x86_64\BigChunk\BigChunk.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -139,6 +141,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Dist-windows-x86_64\BigChunk\BigChunk.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -155,11 +158,14 @@
     <ClInclude Include="src\BigChunk\Events\KeyEvent.h" />
     <ClInclude Include="src\BigChunk\Events\MouseEvent.h" />
     <ClInclude Include="src\BigChunk\Log.h" />
+    <ClInclude Include="src\BigChunk\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\BigChunk\Window.h" />
     <ClInclude Include="src\BigChunkpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BigChunk\Application.cpp" />
     <ClCompile Include="src\BigChunk\Log.cpp" />
+    <ClCompile Include="src\BigChunk\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\BigChunkpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

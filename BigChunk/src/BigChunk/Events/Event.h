@@ -2,6 +2,9 @@
 
 #include "BigChunk/Core.h"
 
+#include <string>
+#include <functional>
+
 namespace BigChunk {
 
 	// Events in Hazel are currently blocking, meaning when an event occurs it

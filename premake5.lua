@@ -10,6 +10,12 @@ workspace "BigChunk"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+--IncludeDir = {}
+--IncludeDir["GLFW"] = "BigChunk/vendor/GLFW/include"
+
+--include "BigChunk/vendor/GLFW"
+ 
 project "BigChunk"
 	location "BigChunk"
 	kind "SharedLib"
@@ -28,7 +34,13 @@ project "BigChunk"
 
 	includedirs{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		--"%{IncludeDir.GLFW}"
+	}
+
+	links{
+		--"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

@@ -7,6 +7,12 @@
     <Filter Include="BigChunk\Events">
       <UniqueIdentifier>{548FC55C-C01A-3321-C92B-B61535368F21}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BigChunk\Platform">
+      <UniqueIdentifier>{C4BB84C0-30D2-8256-7949-0E78E59E53DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BigChunk\Platform\Windows">
+      <UniqueIdentifier>{FEE963A0-6AAC-972A-B35C-26B71F5E7008}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BigChunk.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\BigChunk\Log.h">
       <Filter>BigChunk</Filter>
     </ClInclude>
+    <ClInclude Include="src\BigChunk\Platform\Windows\WindowsWindow.h">
+      <Filter>BigChunk\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BigChunk\Window.h">
+      <Filter>BigChunk</Filter>
+    </ClInclude>
     <ClInclude Include="src\BigChunkpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\BigChunk\Log.cpp">
       <Filter>BigChunk</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BigChunk\Platform\Windows\WindowsWindow.cpp">
+      <Filter>BigChunk\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\BigChunkpch.cpp" />
   </ItemGroup>
